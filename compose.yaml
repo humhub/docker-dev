@@ -55,6 +55,17 @@ services:
     command: redis-server --save 20 1 --loglevel warning
     volumes: 
       - cache:/data
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db 
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${HUMHUB_DOCKER_DB_PASSWORD} 
+      UPLOAD_LIMIT: 16M
 volumes:
   cache:
     driver: local
