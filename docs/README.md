@@ -68,13 +68,15 @@ You can use the wrapper script in the main directoy.
 You can define the HumHub version using the variable `HUMHUB_DOCKER_VERSION`. 
 
 The following tags are currently available:
-- ~~`master` - For the current stable version~~ (not available yet)
+- `master` - For the current stable version
 - `develop` - For the current development version
 - `next` - For the next development version
 
 For older versions:
-- ~~`v1.17`~~ (not available yet)
-- ~~`v1.17.0-beta.1`~~ (not available yet)
+- v1.17` (latest v17 branch)
+- `v1.17.2`
+- `v1.17.1`
+- `v1.17.0`
 
 ### Custom Themes & Modules
 
