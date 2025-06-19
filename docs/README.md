@@ -73,7 +73,7 @@ The following tags are currently available:
 - `next` - For the next development version
 
 For older versions:
-- v1.17` (latest v17 branch)
+- `v1.17` (latest v17 branch)
 - `v1.17.2`
 - `v1.17.1`
 - `v1.17.0`
