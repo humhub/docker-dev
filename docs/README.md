@@ -78,6 +78,11 @@ For older versions:
 - `v1.17.1`
 - `v1.17.0`
 
+### Backups
+
+To back up your HumHub setup, make sure to include the volumes defined in your docker-compose.yml, especially the ones used by the database and HumHub services. 
+In the default configuration, these are typically `./mysql-data` and `./humhub-data`.
+
 ### Custom Themes & Modules
 
 You can store your own themes/modules in the  folders `/opt/humhub/humhub-data/themes` and `/opt/humhub/humhub-data/custom-modules`. 
