@@ -80,8 +80,13 @@ For older versions:
 
 ### Backups
 
-To back up your HumHub setup, make sure to include the volumes defined in your docker-compose.yml, especially the ones used by the database and HumHub services. 
-In the default configuration, these are typically `./mysql-data` and `./humhub-data`.
+To back up your HumHub setup, archive the `./humhub-data` directory for files and configs.
+For the database, use the helper script to create a clean export:
+
+```bash
+./helper.sh export-db backup.sql
+```
+Avoid raw volume backups of the database to prevent inconsistencies.
 
 ### Custom Themes & Modules
 
