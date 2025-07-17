@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        branch: [master, develop, next, v1.17.0, v1.17.1, v1.17.2]
+        branch: [master, develop, next, v1.17.0, v1.17.1, v1.17.2, v1.17.3]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
